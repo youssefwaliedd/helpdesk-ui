@@ -26,7 +26,7 @@ jobs:
       - uses: actions/configure-pages@v5
         with:
           enablement: true
-      - run: npm ci
+      - run: npm install --no-audit --no-fund
       - run: npm run build
         env:
           REACT_APP_WEBHOOK_URL: ${{ secrets.REACT_APP_WEBHOOK_URL }}
