@@ -7,22 +7,22 @@ const QUICK_PROMPTS = ["My WiFi won't connect", "Computer is running slow", "For
 /* "Midnight" — dark AI-assistant theme. Semantic design tokens (skill §6 color-semantic). */
 const STYLES = `
 :root {
-  --bg: #0a0e17;
-  --surface: rgba(255,255,255,0.045);
-  --surface-2: rgba(255,255,255,0.07);
-  --border: rgba(255,255,255,0.09);
-  --border-strong: rgba(255,255,255,0.16);
-  --text: #eef1f8;
-  --text-muted: #9aa3bb;
-  --text-meta: #6a7388;
-  --accent: #8b5cf6;
-  --accent-2: #6366f1;
-  --accent-3: #22d3ee;
-  --grad: linear-gradient(135deg, #6366f1, #8b5cf6);
-  --grad-bright: linear-gradient(135deg, #818cf8, #a78bfa);
+  --bg: #090c16;
+  --surface: rgba(124,131,255,0.06);
+  --surface-2: rgba(124,131,255,0.11);
+  --border: rgba(140,150,255,0.13);
+  --border-strong: rgba(165,175,255,0.24);
+  --text: #f1f3fb;
+  --text-muted: #a6afc9;
+  --text-meta: #727b95;
+  --accent: #a78bfa;
+  --accent-2: #818cf8;
+  --accent-3: #34d3ee;
+  --grad: linear-gradient(135deg, #6366f1 0%, #8b5cf6 58%, #b44bf0 115%);
+  --grad-bright: linear-gradient(135deg, #818cf8, #c084fc);
   --online: #34d399;
-  --ticket-bg: rgba(251,191,36,0.12);
-  --ticket-border: rgba(251,191,36,0.34);
+  --ticket-bg: rgba(251,191,36,0.13);
+  --ticket-border: rgba(251,191,36,0.36);
   --ticket-text: #fcd34d;
   --font-ui: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --font-display: 'Space Grotesk', 'Inter', -apple-system, sans-serif;
@@ -36,8 +36,9 @@ const STYLES = `
 .hd-page {
   min-height: 100vh; min-height: 100dvh; display: flex; align-items: stretch; justify-content: center;
   background:
-    radial-gradient(820px 460px at 12% -8%, rgba(99,102,241,.20), transparent 62%),
-    radial-gradient(820px 460px at 88% -8%, rgba(34,211,238,.13), transparent 62%),
+    radial-gradient(820px 480px at 8% -10%, rgba(124,92,255,.28), transparent 60%),
+    radial-gradient(720px 440px at 94% -6%, rgba(34,211,238,.16), transparent 58%),
+    radial-gradient(900px 620px at 50% 118%, rgba(139,92,246,.14), transparent 60%),
     var(--bg);
   color: var(--text);
   font-family: var(--font-ui);
@@ -209,10 +210,6 @@ export default function App() {
                 <span className="hd-dot" style={{ width: 7, height: 7, borderRadius: "50%", background: "var(--online)", display: "inline-block", flexShrink: 0 }} />
                 AI-powered · Instant support
               </div>
-            </div>
-            <div style={{ marginLeft: "auto", display: "flex", alignItems: "center", gap: 6, color: "var(--text-meta)", fontSize: 12, whiteSpace: "nowrap", flexShrink: 0 }}>
-              <Icon name="sparkles" size={13} stroke={2} style={{ color: "var(--accent)" }} />
-              Powered by n8n
             </div>
           </div>
         </header>
