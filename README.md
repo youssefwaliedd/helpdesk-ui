@@ -7,6 +7,10 @@ creation and escalation to a human agent when needed.
 The frontend is a single-page React app; the conversational logic, ticketing, and
 escalation are handled by an [n8n](https://n8n.io) workflow reached over a webhook.
 
+**🔗 Live demo: https://youssefwaliedd.github.io/helpdesk-ui/**
+
+![IT Helpdesk screenshot](screenshots/app.png)
+
 ## Features
 
 - 💬 Conversational chat UI with typing indicator and quick-prompt suggestions
@@ -38,3 +42,7 @@ The frontend sends `{ sessionId, message, userId }` and expects a JSON response 
 ## Tech stack
 
 React 19 · Create React App · n8n (workflow backend)
+
+## License
+
+[MIT](LICENSE) © Youssef Walied
